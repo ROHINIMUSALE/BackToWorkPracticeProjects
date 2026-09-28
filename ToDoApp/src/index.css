@@ -109,3 +109,116 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.ListHeader {
+  text-align: left;
+  padding: 0 16px;
+}
+
+.day {
+  font-size: 18px;
+  line-height: 135%;
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+.task-count {
+  font-size: 12px;
+  line-height: 135%;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 40%;
+}
+
+.task-input-container{
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.task-input{
+  flex: 1;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.add-button{
+  background-color: var(--accent);
+  color: var(--bg);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-list {
+  padding-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0px;
+  border-bottom: 1px solid var(--border);
+}
+
+.delete-button{
+  background-color: transparent;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.no-tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-h);
+}
+
+.no-tasks-message {
+  font-size: 18px;
+  color: var(--text-h);
+  font-weight: 500;
+}
+
+.no-tasks-subMessage {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.action-buttons{
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.filter-button{
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 2px 8px;
+}
+
+.filter-button-active{
+  background-color: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 2px 8px;
+}
