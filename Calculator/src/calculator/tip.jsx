@@ -18,8 +18,7 @@ const TipCalculator = () => {
     }
     return (
         <>
-            Tip Calculator
-            <div className="tipContainer">
+            <div className="formContainer">
                 <div className='field'>
                     <label htmlFor="billAmount">Bill Amount</label>
                     <input label="Bill Amount" type="number" value={billAmount} onChange={(e) => setBillAmount(parseFloat(e.target.value))} />

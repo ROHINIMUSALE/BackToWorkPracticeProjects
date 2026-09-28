@@ -201,7 +201,7 @@ code {
   color: rgb(96, 90, 90);
 }
 
-.tipContainer {
+.formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,8 +238,21 @@ code {
   padding-right: 27%;
 }
 
-hr {
-  border: none;
-  border-top: 2px solid #ccc;
-  margin: 20px 0;
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-right: 33%;
+}
+
+.field input.input-error {
+  border: 1px solid red;
+}
+
+.category {
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: var(--accent-bg);
+  border-radius: 20px;
+  padding: 5px 10px;
 }
