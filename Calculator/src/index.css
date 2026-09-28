@@ -200,3 +200,46 @@ code {
   background-color: transparent;
   color: rgb(96, 90, 90);
 }
+
+.tipContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.field {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field label {
+  margin-bottom: 5px;
+  align-self: flex-start;
+  /* font-weight: bold; */
+}
+
+.field input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.display {
+  margin-top: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-self: normal;
+  padding-left: 27%;
+  padding-right: 27%;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
