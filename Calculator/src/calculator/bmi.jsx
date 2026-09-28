@@ -7,6 +7,7 @@ const BMICalculator = () => {
     const [heightError, setHeightError] = useState(false)
     const [weightError, setWeightError] = useState(false)
     const [bmi, setBmi] = useState(0)
+    const [category, setCategory] = useState('Normal')
 
     const onChangeHeight = (e) => {
         const value = parseFloat(e.target.value)
@@ -20,17 +21,17 @@ const BMICalculator = () => {
         setWeightError(value <= 0)
     }
 
-    const getCategory = (bmi) => {
+    useEffect(() => {
         if (bmi < 18.5) {
-            return 'Underweight'
+            setCategory('Underweight')
         } else if (bmi < 25) {
-            return 'Normal'
+            setCategory('Normal')
         } else if (bmi < 30) {
-            return 'Overweight'
+            setCategory('Overweight')
         } else {
-            return 'Obese'
+            setCategory('Obese')
         }
-    }
+    }, [bmi])
 
     useEffect(() => {
         const heightInMeters = Number(height) / 100
@@ -57,9 +58,11 @@ const BMICalculator = () => {
                     {weightError && <div className="error">Enter a weight above 0</div>}
                 </div>
 
-                <div>Your BMI</div>
-                <h1>{bmi}</h1>
-                <div className="category">{getCategory(bmi)}</div>
+                <div style={{ marginLeft: '5%' }}>
+                    <div>Your BMI</div>
+                    <h1>{bmi}</h1>
+                    <div className="category">{category}</div>
+                </div>
             </div>
         </>
     )

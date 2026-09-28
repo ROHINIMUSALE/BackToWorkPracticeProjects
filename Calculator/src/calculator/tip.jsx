@@ -23,7 +23,7 @@ const TipCalculator = () => {
                     <label htmlFor="billAmount">Bill Amount</label>
                     <input label="Bill Amount" type="number" value={billAmount} onChange={(e) => setBillAmount(parseFloat(e.target.value))} />
                 </div>
-                <div className='field' style={{ paddingRight: '15%' }}>
+                <div className='field'>
                     <label htmlFor="tipPercentage">Tip percentage</label>
                     <div style={{ display: 'flex', gap: '10px' }}>
                         {percentages.map((percentage) => (
@@ -37,7 +37,7 @@ const TipCalculator = () => {
                         ))}
                     </div>
                 </div>
-                <div className='field' style={{ paddingRight: '18%' }}>
+                <div className='field'>
                     <label htmlFor="numberOfPeople">Number of People</label>
                     <div style={{ display: 'flex', gap: '10px', alignSelf: 'flex-start' }}>
                         <button
